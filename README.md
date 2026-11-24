@@ -1,6 +1,16 @@
+
+
 (Showcase Video soon)
 # OVR Space Controll
+<div align="center">
+    <img src="/Screenshot1.png" width="500px"</img> 
+</div>
 
+⚠️Disclaimer⚠️: This app was created with the help of ChatGPT/Codex. 
+If you don't like vibe coded programs, don't use it. Please report any bugs you find, and feel free to suggest new features.
+<br/>
+<br/>
+<br/>
 This project started with a simple idea: creating a playspace teleporter that I could use in VRChat. However, it quickly grew into something much bigger!
 
 Here are the features currently available:
