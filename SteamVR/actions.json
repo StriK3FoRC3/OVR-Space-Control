@@ -1,0 +1,28 @@
+{
+  "action_sets": [
+    { "name": "/actions/teleport", "usage": "single" },
+    { "name": "/actions/turn", "usage": "single" }
+  ],
+  "actions": [
+    { "name": "/actions/teleport/in/teleport", "type": "boolean", "requirement": "suggested" },
+    { "name": "/actions/teleport/in/reset", "type": "boolean", "requirement": "suggested" },
+    { "name": "/actions/teleport/in/aim", "type": "pose", "requirement": "optional" },
+    { "name": "/actions/turn/in/stick", "type": "vector2", "requirement": "optional" },
+    { "name": "/actions/turn/in/teleport", "type": "boolean", "requirement": "optional" }
+  ],
+  "default_bindings": [
+    { "controller_type": "oculus_touch", "binding_url": "touch.json" },
+    { "controller_type": "knuckles", "binding_url": "knuckles.json" },
+    { "controller_type": "vive_controller", "binding_url": "vive.json" }
+  ],
+  "localization": [{
+    "language_tag": "en_US",
+    "/actions/teleport": "OVR Space Control",
+    "/actions/teleport/in/teleport": "Activate Current Movement Mode",
+    "/actions/teleport/in/reset": "Reset Play Space",
+    "/actions/teleport/in/aim": "Controller Aim",
+    "/actions/turn": "Space Turn After Teleport",
+    "/actions/turn/in/stick": "Turn Play Space",
+    "/actions/turn/in/teleport": "Activate Current Movement Mode"
+  }]
+}

@@ -1,0 +1,33 @@
+{
+  "app_key": "strik3.ovr_space_control",
+  "controller_type": "knuckles",
+  "name": "R3 teleport, L3 reset",
+  "description": "Hold right stick click to aim, release to teleport. Click left stick to reset.",
+  "bindings": {
+    "/actions/teleport": {
+      "poses": [
+        { "path": "/user/hand/left/pose/tip", "output": "/actions/teleport/in/aim" },
+        { "path": "/user/hand/right/pose/tip", "output": "/actions/teleport/in/aim" }
+      ],
+      "sources": [{
+        "path": "/user/hand/right/input/thumbstick",
+        "mode": "joystick",
+        "inputs": { "click": { "output": "/actions/teleport/in/teleport" } }
+      }, {
+        "path": "/user/hand/left/input/thumbstick",
+        "mode": "joystick",
+        "inputs": { "click": { "output": "/actions/teleport/in/reset" } }
+      }]
+    },
+    "/actions/turn": {
+      "sources": [{
+        "path": "/user/hand/right/input/thumbstick",
+        "mode": "joystick",
+        "inputs": {
+          "position": { "output": "/actions/turn/in/stick" },
+          "click": { "output": "/actions/turn/in/teleport" }
+        }
+      }]
+    }
+  }
+}

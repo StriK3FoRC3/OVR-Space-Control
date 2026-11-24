@@ -1,0 +1,23 @@
+{
+  "app_key": "strik3.ovr_space_control",
+  "controller_type": "vive_controller",
+  "name": "Right grip",
+  "description": "Hold the right grip to aim and release to teleport. Press the left grip to reset.",
+  "bindings": {
+    "/actions/teleport": {
+      "poses": [
+        { "path": "/user/hand/left/pose/tip", "output": "/actions/teleport/in/aim" },
+        { "path": "/user/hand/right/pose/tip", "output": "/actions/teleport/in/aim" }
+      ],
+      "sources": [{
+        "path": "/user/hand/right/input/grip",
+        "mode": "button",
+        "inputs": { "click": { "output": "/actions/teleport/in/teleport" } }
+      }, {
+        "path": "/user/hand/left/input/grip",
+        "mode": "button",
+        "inputs": { "click": { "output": "/actions/teleport/in/reset" } }
+      }]
+    }
+  }
+}

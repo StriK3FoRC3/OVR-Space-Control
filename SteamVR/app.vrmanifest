@@ -1,0 +1,13 @@
+{
+  "source": "builtin",
+  "applications": [{
+    "app_key": "strik3.ovr_space_control",
+    "launch_type": "binary",
+    "binary_path_windows": "../OVR Space Control.exe",
+    "action_manifest_path": "actions.json",
+    "is_dashboard_overlay": true,
+    "strings": {
+      "en_us": { "name": "OVR Space Control", "description": "SteamVR play-space movement, flight, and teleport controls." }
+    }
+  }]
+}
