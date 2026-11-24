@@ -1,7 +1,7 @@
 
 
 (Showcase Video soon)
-# OVR Space Controll
+# OVR Space Control
 <div align="center">
     <img src="/Screenshot1.png" width="500px"</img> 
 </div>
